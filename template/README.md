@@ -6,7 +6,7 @@ url: https://www.bilibili.com/video/BVxxxxxxxxxx
 author: 作者名
 author_url: https://space.bilibili.com/xxxxxx
 upload_date: YYYY-MM-DD
-summarize_model: GPT-5
+summarize_model: GPT-5.3
 summarize_date: YYYY-MM-DD
 ---
 

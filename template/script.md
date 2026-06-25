@@ -8,7 +8,7 @@ author_url: https://space.bilibili.com/xxxxxx
 upload_date: YYYY-MM-DD
 asr_model: Qwen3-ASR 1.7B
 transcribe_date: YYYY-MM-DD
-local_filepath: 本地视频路径（相对于 ppt-wrap-bug 这个 worksapce）
+local_filepath: 本地视频路径（相对于 upward-art 这个 workspace）
 ---
 
 ## 数字规范

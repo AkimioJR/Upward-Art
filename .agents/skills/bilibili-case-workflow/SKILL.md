@@ -143,4 +143,7 @@ commit message 使用中文，推荐格式：
 - `cases/<序号>-<案例名>/README.md` 元数据完整。
 - `cases/<序号>-<案例名>/script.md` 包含整理脚本和 ASR 原文。
 - `source.mp4` 已归档到对应案例目录。
+- `AGENTS.md` 中的背景角色列表已补充视频中出现的新人物。
+- `README.md` 中的案例库表格和场景映射表已追加新案例。
+- `references/case-index.md` 中的场景速查表和案例详情已同步更新。
 - `git status` 中没有误加入 `.tmp/`、下载中间文件或无关改动。

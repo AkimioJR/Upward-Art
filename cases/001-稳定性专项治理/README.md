@@ -6,7 +6,7 @@ url: https://www.bilibili.com/video/BV1MdAdzPEQ4/
 author: 老头们的快乐生活
 author_url: https://space.bilibili.com/18232315
 upload_date: 2026-03-03
-summarize_model: GPT-5.5
+summarize_model: gpt-5.5
 summarize_date: 2026-06-25
 ---
 

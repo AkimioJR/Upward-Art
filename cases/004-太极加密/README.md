@@ -4,9 +4,9 @@ platform: BiliBili
 video_id: BV1gp5X6uE22
 url: https://www.bilibili.com/video/BV1gp5X6uE22/
 author: 老头们的快乐生活
-author_url: https://space.bilibili.com/
+author_url: https://space.bilibili.com/18232315
 upload_date: 2026-05-14
-summarize_model: GPT-5.3
+summarize_model: gpt-5.3
 summarize_date: 2026-06-25
 ---
 
@@ -64,6 +64,6 @@ summarize_date: 2026-06-25
 
 王处不是不懂，他是在不懂的基础上建了一套自洽的逻辑。
 
-PPT 再往上变成太极图，那张图比你的代码值钱一万倍。
+PPT 再往上变成太极图，那张图比你的代码值钱1万倍。
 
 下个月汇报上会写王处长提出，我们的名字不会出现，我们叫技术支撑单位，六号字。

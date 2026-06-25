@@ -4,9 +4,9 @@ platform: BiliBili
 video_id: BV1fM5R6xEDQ
 url: https://www.bilibili.com/video/BV1fM5R6xEDQ/
 author: 老头们的快乐生活
-author_url: https://space.bilibili.com/
+author_url: https://space.bilibili.com/18232315
 upload_date: 2026-05-14
-summarize_model: GPT-5.3
+summarize_model: gpt-5.3
 summarize_date: 2026-06-25
 ---
 
@@ -16,7 +16,7 @@ summarize_date: 2026-06-25
 
 ## 技术真相
 
-浩宇把两千个4K视频转成 Base64 文本直接存入数据库的 BLOB 字段，每个视频拆成 432 条记录，总共 86 万条，塞满 1.8TB（磁盘占用 99.7%）。查询一次需要 47 分钟，数据库在后台把 800MB 的 Base64 一条一条读出来。本质是把视频当文本存、把对象存储当关系数据库用的典型反模式。
+浩宇把2000个4K视频转成 Base64 文本直接存入数据库的 BLOB 字段，每个视频拆成 432 条记录，总共 86 万条，塞满 1.8TB（磁盘占用 99.7%）。查询一次需要 47 分钟，数据库在后台把 800MB 的 Base64 一条一条读出来。本质是把视频当文本存、把对象存储当关系数据库用的典型反模式。
 
 ## 领导话术
 

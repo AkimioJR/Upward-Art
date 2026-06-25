@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bilibili 案例工作流"
+  short_description: "下载、转录并归档 Bilibili 案例"
+  default_prompt: "使用 $bilibili-case-workflow 下载一个 Bilibili 视频，转录文本，总结内容，并更新 cases 目录。"

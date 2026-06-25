@@ -21,6 +21,7 @@ description: 下载 Bilibili 视频，使用 yt-dlp 获取源视频，通过 tra
 8. 生成案例名后，再运行 `scripts/prepare_case.py --archive-title "<案例名>"`，把临时工作区归档为 `cases/<序号>-<案例名>/`。
 9. 检查两个 Markdown 文件中的元数据，确保视频来源、日期和本次处理信息一致。
 10. 完成归档和检查后提交 git commit，commit message 遵循下方规范。
+11. 完成工作流后可以删除临时目录 `.tmp/bilibili-case-workflow/<BV id>/`。
 
 ## 下载命令
 

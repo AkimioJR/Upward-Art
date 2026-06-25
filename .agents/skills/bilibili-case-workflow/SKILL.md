@@ -20,13 +20,14 @@ description: 下载 Bilibili 视频，使用 yt-dlp 获取源视频，通过 tra
 7. 在 `README.md` 中填写案例总结、技术真相、领导话术、PPT 模板和金句摘录。
 8. 生成案例名后，再运行 `scripts/prepare_case.py --archive-title "<案例名>"`，把临时工作区归档为 `cases/<序号>-<案例名>/`。
 9. 检查两个 Markdown 文件中的元数据，确保视频来源、日期和本次处理信息一致。
+10. 完成归档和检查后提交 git commit，commit message 遵循下方规范。
 
 ## 下载命令
 
 使用下面的基础命令，只替换 URL 和输出路径：
 
 ```bash
-uv tool run yt-dlp --cookies-from-browser edge -o ".tmp/bilibili-case-workflow/<BV id>/source.%(ext)s" "https://www.bilibili.com/video/<BV id>/"
+uv tool run yt-dlp --cookies-from-browser edge -o '.tmp/bilibili-case-workflow/<BV id>/source.%(ext)s' 'https://www.bilibili.com/video/<BV id>/'
 ```
 
 如果 yt-dlp 下载出的文件不是 mp4，先确认文件是否能直接播放；只有在确认容器与内容正确后，才转换或重命名。最终案例中尽量保留 `source.mp4`。
@@ -36,6 +37,8 @@ uv tool run yt-dlp --cookies-from-browser edge -o ".tmp/bilibili-case-workflow/<
 ## 转录文本
 
 使用可用的 MCP `transcribe_file` 服务处理本地 `source.mp4`。将工具返回内容作为原始转录文本，再在 `script.md` 中轻度整理标点、分段、说话人标签和动作说明。
+
+注意：这个 MCP 的语言参数说明有偏差，实际可用值是英文语言名，不是 `zh` / `yue` 这类简码。常见可用值包括 `Chinese`、`English`、`Cantonese`、`Japanese` 等；如果传入 `zh`，服务会报 `Unsupported language: Zh` 一类错误。
 
 如果当前环境没有可用的 `transcribe_file` MCP 服务，下载完成后停止，并明确告诉用户：转录步骤被缺失的 MCP 服务阻塞。
 
@@ -69,3 +72,32 @@ uv tool run yt-dlp --cookies-from-browser edge -o ".tmp/bilibili-case-workflow/<
 - 不要盲目覆盖用户已经整理过的内容；先阅读现有文件，保留有价值的人工修订。
 - 不要改动无关案例。
 - 日期统一使用 `YYYY-MM-DD` 格式。
+
+## Commit Message 规范
+
+归档完成后提交一次 commit，范围只包含本次新增或更新的案例文件，不要把无关工作区改动混进来。
+
+commit message 使用中文，推荐格式：
+
+```text
+归档案例：<序号>-<案例名>
+```
+
+例如：
+
+```text
+归档案例：001-稳定性专项治理
+```
+
+如果本次只是修正文稿或补充素材，而不是新增案例，使用：
+
+```text
+更新案例：<序号>-<案例名>
+```
+
+提交前需要检查：
+
+- `cases/<序号>-<案例名>/README.md` 元数据完整。
+- `cases/<序号>-<案例名>/script.md` 包含整理脚本和 ASR 原文。
+- `source.mp4` 已归档到对应案例目录。
+- `git status` 中没有误加入 `.tmp/`、下载中间文件或无关改动。

@@ -54,7 +54,7 @@ uv tool run yt-dlp --cookies-from-browser edge -o '.tmp/bilibili-case-workflow/<
 填写 `README.md` 时：
 
 - 保留模板中的 YAML frontmatter 字段。
-- 设置 `platform: BiliBili`、`video_id`、`url`、`summarize_model` 和 `summarize_date`。
+- 设置 `platform: BiliBili`、`video_id`、`url`、`summarize_model` 和 `summarize_date`（填写 summarize_model 前先需要询问自己是什么模型，不要随意填写或者保持默认值不变）。
 - 根据视频的核心笑点，或“技术真相 -> 包装话术”的转换，提炼案例名称。
 - 保持本仓库简洁、讽刺、程序员自嘲式的语气。
 - 清楚区分真实技术实现和面向 PPT 的夸张包装。

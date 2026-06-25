@@ -6,7 +6,7 @@ url: https://www.bilibili.com/video/BVxxxxxxxxxx
 author: 作者名
 author_url: https://space.bilibili.com/xxxxxx
 upload_date: YYYY-MM-DD
-summarize_model: GPT-5.3
+summarize_model: gpt-5.3（填写类似于gpt-5.3、gpt-5.3-Codex、gpt-5.4-mini、gemini-2.5-flash-lite、gemini-3.1-pro、claude-3-5-haiku-20241022、claude-opus-4-1-20250805、claude-opus-4-7、deepseek-v3.1、glm-4.6、mimo-v2.5-pro这样的规范模型）
 summarize_date: YYYY-MM-DD
 ---
 

@@ -66,6 +66,8 @@ uv tool run yt-dlp --cookies-from-browser edge -o '.tmp/bilibili-case-workflow/<
 - 临时处理阶段，可将 `local_filepath` 写成 `.tmp/bilibili-case-workflow/BV1gp5X6uE22/source.mp4`。
 - 归档后，把 `local_filepath` 更新为最终目录路径，例如 `cases/001-太极加密/source.mp4`。
 - 在 `## 视频脚本` 下写入可读性更好的整理版本。
+- 视频中可能插入甲方广告或赞助推广段落，整理 `## 视频脚本` 时应识别并移除这些广告内容，用 `<!-- 广告：简要说明 -->` 标注跳过位置（例如 `<!-- 广告：蓝盒子床垫推广 -->`）。判断标准：与主线剧情无关、明显在介绍商品或品牌功能、带有购买引导话术的段落属于广告。
+- `## 原文` 保持 ASR 原文不做任何修改，广告内容如实保留。
 - 在 `## 原文` 下写入未经改写的 ASR 原文。
 
 
